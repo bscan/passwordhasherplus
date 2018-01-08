@@ -815,9 +815,7 @@ function invariant_startup_code(){
 }
 </script>
 <script type="application/json" id="database">{
-"options":{"compatibilityMode":false,"backedUp":false,"privateSeed":"7E988596-D3B8-4A5E-A787-8BD74BEA66F6","defaultLength":8,"defaultStrength":2,"hashKey":"Ctrl+Shift+51","maskKey":"Ctrl+Shift+56"},
-"tag:othertag":{"length":8,"strength":2,"seed":"05031D8D-77C1-4346-B0C9-6934E554044D"},
-"url:foo":{"tag":"othertag","fields":[]},
+"options":{"compatibilityMode":false,"backedUp":false,"privateSeed":"","defaultLength":12,"defaultStrength":2,"hashKey":"Ctrl+Shift+51","maskKey":"Ctrl+Shift+56"},
 "version":5
 }
 </script>
@@ -922,7 +920,7 @@ function invariant_startup_code(){
 	</tbody></table>
 
 </div>
-
+<div id="backup_div" style="display: none;">
 <h2>Database backup</h2>
 <div><p>Your database is also backed up in this portable html page.</p></div>
 
@@ -931,15 +929,10 @@ function invariant_startup_code(){
 </div>
 
 <div>
-  <textarea id="databasetextarea" cols="120" rows="12" style="display: none;">{
-"options":{"compatibilityMode":false,"backedUp":false,"privateSeed":"7E988596-D3B8-4A5E-A787-8BD74BEA66F6","defaultLength":8,"defaultStrength":2,"hashKey":"Ctrl+Shift+51","maskKey":"Ctrl+Shift+56"},
-"tag:othertag":{"length":8,"strength":2,"seed":"05031D8D-77C1-4346-B0C9-6934E554044D"},
-"url:foo":{"tag":"othertag","fields":[]},
-"version":5
-}
+  <textarea id="databasetextarea" cols="120" rows="12" style="display: none;">
 </textarea>
 </div>
-
+</div>
 <div id="savediv" style="display: none;">
   <h2>Download portable html page</h2>
   <a download="passhashplus.html" id="save"><input type="button" value="Download"></a>
